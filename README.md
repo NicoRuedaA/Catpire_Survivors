@@ -1,4 +1,3 @@
-<img src="banner.jpg">
 
 <div align="center">
   <img src="banner.jpg" alt="Catpire Survivors banner" width="100%" />
