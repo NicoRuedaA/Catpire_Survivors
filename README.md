@@ -22,7 +22,7 @@ A **Vampire Survivors-inspired roguelike** built in **Java** with **libGDX** fra
 ---
 
 > **Current Status:** Alfa released (Playable)  
-> **Last Updated:** 2026-04-26
+> **Last Updated:** 26-APR-2026
 
 ---
 
@@ -44,26 +44,26 @@ A fast-paced auto-battler roguelike where you fight against overwhelming odds. Y
 ## 2. Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────────┐
-│                        COMPONENT DIAGRAM                              │
-│                                                                          │
-│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐   │
-│  │   Player        │  │   Enemy          │  │   Projectile    │   │
-│  │   (Brain)       │  │   (Body)         │  │   (Controller) │   │
-│  │                 │  │                 │  │                 │   │
-│  │  - State        │  │  - AI            │  │  - Movement    │   │
-│  │  - PowerUps     │  │  - Animation    │  │  - Collision   │   │
-│  │  - Health       │  │  - Spawning     │  │  - Damage      │   │
-│  └────────┬────────┘  └─────────────────┘  └─────────────────┘   │
-│           │                                                            │
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        COMPONENT DIAGRAM                                │
+│                                                                         │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐          │
+│  │   Player        │  │   Enemy         │  │   Projectile    │          │
+│  │   (Brain)       │  │   (Body)        │  │   (Controller)  │          │
+│  │                 │  │                 │  │                 │          │
+│  │  - State        │  │  - AI           │  │  - Movement     │          │
+│  │  - PowerUps     │  │  - Animation    │  │  - Collision    │          │
+│  │  - Health       │  │  - Spawning     │  │  - Damage       │          │
+│  └────────┬────────┘  └─────────────────┘  └─────────────────┘          │
+│           │                                                             │
 │           │  ┌───────────────────────────────────────────┐              │
-│           └──│          GameManager / InGame           │              │
+│           └──│          GameManager / InGame             │              │
 │              │                                           │              │
-│              │  - Wave management                       │              │
-│              │  - Score & XP                           │              │
-│              │  - Camera control                       │              │
-│              └─────���─────────────────────────────────────┘              │
-└──────────────────────────────────────────────────────────────────────────┘
+│              │  - Wave management                        │              │
+│              │  - Score & XP                             │              │
+│              │  - Camera control                         │              │
+│              └───────────────────────────────────────────┘              │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
