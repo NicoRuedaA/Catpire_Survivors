@@ -29,7 +29,6 @@ A **Vampire Survivors-inspired roguelike** built in Java with the libGDX framewo
 1. Clone the repository:
 ```bash
    git clone https://github.com/NicoRuedaA/Catpire_Survivors.git
-   cd Catpire_Survivors/Catpire_Survivors
 ```
 
 2. Run the game:
