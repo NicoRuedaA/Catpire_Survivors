@@ -1,3 +1,5 @@
+[Leer en Español](ES.md)
+
 <h1 align="center">Catpire Survivors</h1>
 
 <p align="center">
