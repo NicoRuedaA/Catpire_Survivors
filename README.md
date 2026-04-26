@@ -5,7 +5,7 @@
 [![GLSL](https://img.shields.io/badge/Shaders-GLSL-green)](https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language)
 [![Status](https://img.shields.io/badge/Status-Playable-brightgreen)]()
 
-![banner](banner.jpg)
+![screenshot](/Docs/captura.png)
 
 A **Vampire Survivors-inspired roguelike** built in Java with the libGDX framework. Fight through endless enemy waves, collect XP gems, level up your character, and survive as long as possible — with custom GLSL shaders powering the visual effects.
 
