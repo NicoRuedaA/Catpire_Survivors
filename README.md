@@ -240,8 +240,9 @@ Visuals:         ██████████░░░░░░░░░░░
 Audio:           ████░░░░░░░░░░░░░░░░░░ 20%
 Content:         ░░░░░░░░░░░░░░░░░░░░░  0%
 Mobile:          ░░░░░░░░░░░░░░░░░░░░░  0%
+```
 
----
+
 
 ## 12. Resources
 
@@ -252,4 +253,5 @@ Mobile:          ░░░░░░░░░░░░░░░░░░░░░
 
 ---
 
-<i>Built with Java + libGDX + passion</i> 🇦🇷
+
+<i>Built with Java + libGDX + passion</i>
