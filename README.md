@@ -1,13 +1,31 @@
-# Catpire Survivors
 
-[![Java](https://img.shields.io/badge/Java-17-orange?logo=java)](https://www.java.com/)
-[![libGDX](https://img.shields.io/badge/libGDX-1.12-red)](https://libgdx.com/)
-[![GLSL](https://img.shields.io/badge/Shaders-GLSL-green)](https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language)
-[![Status](https://img.shields.io/badge/Status-Playable-brightgreen)]()
 
-![screenshot](/Docs/captura.png)
+<h1 align="center">Catpire Survivors</h1>
 
-A **Vampire Survivors-inspired roguelike** built in Java with the libGDX framework. Fight through endless enemy waves, collect XP gems, level up your character, and survive as long as possible — with custom GLSL shaders powering the visual effects.
+<p align="center">
+  <a href="https://www.java.com/">
+    <img src="https://img.shields.io/badge/Java-17-orange?logo=java" />
+  </a>
+  <a href="https://libgdx.com/">
+    <img src="https://img.shields.io/badge/libGDX-1.12-red" />
+  </a>
+  <a href="https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language">
+    <img src="https://img.shields.io/badge/Shaders-GLSL-green" />
+  </a>
+  <img src="https://img.shields.io/badge/Status-Playable-brightgreen" />
+</p>
+
+<p align="center">
+  <img src="/Docs/preview.gif" alt="screenshot"/>
+</p>
+
+A **Vampire Survivors-inspired roguelike** built in Java with the libGDX framework. Fight through endless enemy waves, collect XP gems, level up your character, and survive as long as possible
+
+
+---
+
+> **Current Status:** Playable Alfa released <br>
+> **Last Updated:** 26/apr/2026
 
 ---
 
