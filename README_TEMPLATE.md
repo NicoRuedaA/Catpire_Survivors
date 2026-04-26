@@ -1,16 +1,10 @@
 <h1 align="center"> Project Name </h1>
 
 <p align="center">
-  <a href="https://www.java.com/">
-    <img src="https://img.shields.io/badge/Java-17-orange?logo=java" />
-  </a>
-  <a href="https://libgdx.com/">
-    <img src="https://img.shields.io/badge/libGDX-1.12-red" />
-  </a>
-  <a href="https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language">
-    <img src="https://img.shields.io/badge/Shaders-GLSL-green" />
-  </a>
-  <img src="https://img.shields.io/badge/Status-Alfa-brightgreen" />
+![Badge1](https://img.shields.io/badge/{Tech1}-{Version1}-blue?logo={logo1})
+![Badge2](https://img.shields.io/badge/{Tech2}-{Version2}-blue?logo={logo2})
+![Status](https://img.shields.io/badge/Status-{Progress}%25%20Complete-{color})
+![Tests](https://img.shields.io/badge/Tests-{TestsCount}%20passing-brightgreen)
 </p>
 
 <p align="center">
@@ -21,7 +15,7 @@
 
 ---
 
-> **Current Status:** {status_description}  
+> **Current Status:** ~{XX}% complete ({status_description})  
 > **Last Updated:** {YYYY-MM-DD}
 
 ---
@@ -34,8 +28,6 @@
 - **Feature 2:** {description}
 - **Feature 3:** {description}
 - **Feature 4:** {description}
-- **Feature 5:** {description}
-- **Feature 6:** {description}
 
 **Architecture:** {describe your architecture pattern, e.g., "Brain and Body", Clean Architecture, etc.}
 
@@ -44,26 +36,26 @@
 ## 2. Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────────┐
-│                        COMPONENT DIAGRAM                              │
+┌─────────────────────────────────────────────────────────────────────────┐
+│                           COMPONENT DIAGRAM                              │
 │                                                                          │
-│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐   │
-│  │   Player        │  │   Enemy          │  │   Projectile    │   │
-│  │   (Brain)       │  │   (Body)         │  │   (Controller) │   │
-│  │                 │  │                 │  │                 │   │
-│  │  - State        │  │  - AI            │  │  - Movement    │   │
-│  │  - PowerUps     │  │  - Animation    │  │  - Collision   │   │
-│  │  - Health       │  │  - Spawning     │  │  - Damage     │   │
-│  └────────┬────────┘  └─────────────────┘  └─────────────────┘   │
-│           │                                                            │
-│           │  ┌───────────────────────────────────────────┐              │
-│           └──│          GameManager / InGame           │              │
-│              │                                           │              │
-│              │  - Wave management                       │              │
-│              │  - Score & XP                           │              │
-│              │  - Camera control                       │              │
-│              └───────────────────────────────────────┘              │
-└──────────────────────────────────────────────────────────────────────────┘
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐       │
+│  │   SystemA       │  │   SystemB       │  │   SystemC       │       │
+│  │   (Brain)       │  │   (Body)        │  │   (Controller)  │       │
+│  │                 │  │                 │  │                 │       │
+│  │  - State        │  │  - Movement     │  │  - Input        │       │
+│  │  - Data         │  │  - Rendering   │  │  - Events      │       │
+│  └────────┬────────┘  └─────────────────┘  └────────┬────────┘       │
+│           │                                         │                 │
+│           └─────────────────────────────────────────┘                 │
+│                              │                                         │
+│  ┌───────────────────────────┴─────────────────────────────────┐       │
+│  │                     MainController                          │       │
+│  │                                                              │       │
+│  │  - Coordinate between systems                               │       │
+│  │  - State management                                         │       │
+│  └──────────────────────────────────────────────────────────────┘       │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -74,20 +66,8 @@
 |--------|--------|-------------|
 | **{Feature}** | ✅ | {description} |
 | **{Feature}** | ✅ | {description} |
-| **{Feature}** | ✅ | {description} |
-| **{Feature}** | ✅ | {description} |
 | **{Feature}** | 🟡 | {description} |
 | **{Feature}** | ❌ | Not started |
-
-### Phase Progress Overview
-
-```
-Core:           ████████████████████ 100%
-Progression:    ████████████████████ 100%
-Visuals:        ██████████░░░░░░░░░░░ 50%
-Audio:          ████░░░░░░░░░░░░░░░░░ 20%
-Content:        ░░░░░░░░░░░░░░░░░░░░░  0%
-```
 
 ---
 
@@ -95,18 +75,16 @@ Content:        ░░░░░░░░░░░░░░░░░░░░░ 
 
 | Technology | Version | Notes |
 |------------|---------|-------|
-| Java | **17+** | LTS version required |
-| libGDX | **1.12** | Cross-platform game framework |
-| GLSL | **OpenGL ES 2.0** | Shader language |
-| Gradle | **8.x** | Build tool (included in wrapper) |
+| {Tech} | **{Version}** | {notes} |
+| {Tech} | {Version} | {notes} |
+| {Tech} | {Version} | {notes} |
 
-### Required Packages (via Gradle)
+### Required Packages
 
 ```bash
 # Core
-com.badlogicgames.gdx:gdx:1.12.1
-com.badlogicgames.gdx:gdx-backend-lwjgl3:1.12.1
-com.badlogicgames.gdx:gdx-tools:1.12.1
+com.unity.{package}@{version}
+com.unity.{package}@{version}
 ```
 
 ---
@@ -118,12 +96,10 @@ com.badlogicgames.gdx:gdx-tools:1.12.1
 git clone https://github.com/{username}/{repo}.git
 cd {repo}
 
-# 2. Run the game (desktop)
-./gradlew lwjgl3:run
+# 2. Open in {IDE/Engine}
+{IDE} → Open → Select {project folder}
 
-# 3. Or build a runnable JAR
-./gradlew lwjgl3:jar
-# Output: lwjgl3/build/libs/
+# 3. Run/Play
 ```
 
 ---
@@ -132,10 +108,9 @@ cd {repo}
 
 | Input | Action | Notes |
 |-------|--------|-------|
-| `WASD` / `Arrow keys` | Move | 8-directional movement |
-| Weapons | Auto-fire | Fires automatically at nearest enemy |
-| `Esc` | Pause/Resume | Toggle game pause |
-| Mouse | Select upgrades | Click to choose level-up options |
+| `{Key}` | {Action} | {notes} |
+| `{Key}` | {Action} | {notes} |
+| `{Key}` (hold) | {Action} | {notes} |
 
 ---
 
@@ -143,52 +118,46 @@ cd {repo}
 
 ```
 {Project}/
-├── core/src/main/java/io/github/{project}/    # Main game code
-│   ├── Player.java                        # Player entity & state
-│   ├── Enemy.java                       # Enemy entity & AI
-│   ├── Projectile.java                  # Projectile system
-│   ├── PowerUp/                        # Upgrade system
-│   │   ├── PowerUp.java               # Base class
-│   │   ├── PowerUpManager.java       # Upgrade manager
-│   │   └── PowerUpRegistry.java     # Upgrade registry
-│   ├── GameManager.java                  # Core game loop
-│   ├── InGame.java                    # In-game screen
-│   ├── InputManager.java              # Input handling
-│   └── *.java                       # Other entities
+├── {Folder}/                      # Main code
+│   ├── {Subfolder}/              # {description}
+│   │   └── {files}
+│   ├── {Subfolder}/              # {description}
+│   │   └── {files}
+│   └── {Subfolder}/              # {description}
+│       └── {files}
 │
-├── lwjgl3/                             # Desktop launcher
-├── assets/                              # Sprites, shaders (.glsl), audio
-├── Docs/                                # Documentation & media
-├── build.gradle                         # Root build config
-└── settings.gradle                     # Gradle settings
+├── {Tests}/                      # Tests (if applicable)
+│   └── {test files}
+│
+└── .config/                     # Configuration
+    └── {config files}
 ```
 
 ---
 
 ## 8. Code Conventions
 
-### Package Structure
+### Namespaces
 
-```java
-io.github.{project}          // Main package
-io.github.{project}.PowerUp // PowerUp system
+```csharp
+{Project}.Core           // Core entities, state
+{Project}.{Module}      // {description}
+{Project}.{Module}      // {description}
 ```
 
 ### Naming / Structure
 
-- **Classes:** PascalCase (e.g., `Player`, `EnemyManager`)
-- **Methods:** camelCase (e.g., `update()`, `fireProjectile()`)
-- **Constants:** UPPER_SNAKE_CASE
-- **Files:** Same name as class + `.java`
+- {convention 1}
+- {convention 2}
 
 ### Commits
 
 Format: `<type>(<scope>): <description>`
 
 ```bash
-feat(player): add dash ability
-fix(enemy): fix pathfinding issue
-refactor(powerup): improve upgrade system
+feat(module): add new feature
+fix(module): fix bug
+refactor(module): improve code
 docs(readme): update documentation
 ```
 
@@ -196,33 +165,23 @@ docs(readme): update documentation
 
 ## 9. Troubleshooting
 
-### "Game doesn't start"
+### "{Problem}"
 
-1. Verify Java 17+ is installed: `java -version`
-2. Clean and rebuild: `./gradlew clean lwjgl3:run`
+1. {Solution step}
+2. {Solution step}
 
-### "Shaders not loading"
+### "{Problem}"
 
-1. Ensure `.glsl` files are in `assets/` folder
-2. Check file paths in `resourceManager.java`
-
-### "Lag / Low FPS"
-
-1. Reduce enemy spawn rate in `EnemyManager`
-2. Lower resolution in `Main.java`
+1. {Solution step}
 
 ---
 
 ## 10. Changelog
 
-### v0.1.0 Alfa ({YYYY-MM-DD})
-- ✅ Feat: Auto-battle combat system
-- ✅ Feat: Enemy wave spawning
-- ✅ Feat: XP and level-up system
-- ✅ Feat: PowerUp upgrades ({count} types)
-- ✅ Feat: Boss encounters
-- ✅ Feat: Custom GLSL shaders
-- ✅ Feat: Pause functionality
+### v{Version} ({YYYY-MM-DD})
+- ✅ Feat: {feature description}
+- ✅ Fix: {fix description}
+- ✅ Refactor: {refactor description}
 
 ### v{PreviousVersion} ({YYYY-MM-DD})
 - ✅ Feat: {feature description}
@@ -232,50 +191,22 @@ docs(readme): update documentation
 
 ## 11. Roadmap
 
-> See [ROADMAP.md](ROADMAP.md) for detailed progress tracking.
+**Phase 1: {Name}** ({XX}%)
+- ✅ {completed}
+- 🟡 {in_progress}
+- ❌ {not_started}
 
-**Phase 1: Core Gameplay** (100%)
-- ✅ Player movement
-- ✅ Auto-attack
-- ✅ Enemy waves
-- ✅ Level-up system
+**Phase 2: {Name}** ({XX}%)
+- ❌ {not_started}
 
-**Phase 2: Progression Systems** (100%)
-- ✅ PowerUp system
-- ✅ XP & level-up UI
-- ✅ Boss encounters
-
-**Phase 3: Visual Polish** (50%)
-- ✅ GLSL shaders
-- ✅ Player/Enemy animations
-- 🟡 Screen shake effects
-- ❌ Screen shake on death
-
-**Phase 4: Audio** (20%)
-- ⚠️ Sound effects present but unused
-- ❌ Background music
-- ❌ Enemy/UI sounds
-
-**Phase 5: Content Expansion** (0%)
-- ❌ New weapons (Axe, Garlic, Lightning)
-- ❌ Flying/Ranged enemies
-- ❌ New biomes
-
-**Phase 6: Mobile Port** (0%)
-- ❌ Touch controls
-- ❌ Android build
-
-**Phase 7: Polish & Release** (10%)
-- ❌ Main menu revamp
-- ❌ Settings
-- ❌ Beta/1.0 release
+**Phase 3: {Name}** ({XX}%)
+- ❌ {not_started}
 
 ---
 
 ## 12. Resources
 
 - **Repository:** https://github.com/{username}/{repo}
-- **Roadmap:** [ROADMAP.md](ROADMAP.md) (detailed progress tracking)
 - **Documentation:** `{folder}/`
 - **Related:** {links}
 
