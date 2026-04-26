@@ -3,6 +3,8 @@ package io.github.catpire;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -13,18 +15,19 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 
 public class MainMenu implements Screen {
 
-    //private Proyecto3Game game;
     private Main game;
     private Stage stage;
     private Skin skin;
+    private Texture backgroundTexture;
+    private SpriteBatch batch;
 
     public MainMenu(Main game) {
         this.game = game;
 
-        // El 'Stage' es como un lienzo para la UI
         stage = new Stage(new ScreenViewport());
+        backgroundTexture = new Texture(Gdx.files.internal("fondoMenu.jpg"));
+        batch = new SpriteBatch();
 
-        // Cargamos la skin que descargaste
         try {
             skin = new Skin(Gdx.files.internal("uiskin.json"));
         } catch (Exception e) {
@@ -58,20 +61,23 @@ public class MainMenu implements Screen {
 
     @Override
     public void render(float delta) {
-        // Limpiamos la pantalla
-        Gdx.gl.glClearColor(0.2f, 0.2f, 0.2f, 1);
+        Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
-        // Actualizamos y dibujamos el lienzo de la UI
+        batch.begin();
+        batch.draw(backgroundTexture, 0, 0, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+        batch.end();
+
         stage.act(delta);
         stage.draw();
     }
 
     @Override
     public void dispose() {
-        // Liberamos los recursos del menú
         stage.dispose();
         skin.dispose();
+        backgroundTexture.dispose();
+        batch.dispose();
     }
 
     @Override
