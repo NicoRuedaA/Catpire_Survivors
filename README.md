@@ -134,24 +134,24 @@ cd Catpire_Survivors
 
 ```
 Catpire_Survivors/
-├── core/src/main/java/io/github/catpire/    # Main game code
-│   ├── Player.java                        # Player entity & state
-│   ├── Enemy.java                       # Enemy entity & AI
-│   ├── Projectile.java                  # Projectile system
-│   ├── PowerUp/                        # Upgrade system
-│   │   ├── PowerUp.java               # Base class
-│   │   ├── PowerUpManager.java       # Upgrade manager
-│   │   └── PowerUpRegistry.java     # Upgrade registry
-│   ├── GameManager.java                  # Core game loop
-│   ├── InGame.java                    # In-game screen
-│   ├── InputManager.java              # Input handling
-│   └── *.java                       # Other entities
+├── core/src/main/java/io/github/catpire/      # Main game code
+│   ├── Player.java                            # Player entity & state
+│   ├── Enemy.java                             # Enemy entity & AI
+│   ├── Projectile.java                        # Projectile system
+│   ├── PowerUp/                               # Upgrade system
+│   │   ├── PowerUp.java                       # Base class
+│   │   ├── PowerUpManager.java                # Upgrade manager
+│   │   └── PowerUpRegistry.java               # Upgrade registry
+│   ├── GameManager.java                       # Core game loop
+│   ├── InGame.java                            # In-game screen
+│   ├── InputManager.java                      # Input handling
+│   └── *.java                                 # Other entities
 │
-├── lwjgl3/                             # Desktop launcher
-├── assets/                              # Sprites, shaders (.glsl)
-├── Docs/                                # Documentation & media
-├── build.gradle                         # Root build config
-└── settings.gradle                     # Gradle settings
+├── lwjgl3/                                    # Desktop launcher
+├── assets/                                    # Sprites, shaders (.glsl)
+├── Docs/                                      # Documentation & media
+├── build.gradle                               # Root build config
+└── settings.gradle                            # Gradle settings
 ```
 
 ---
@@ -234,12 +234,12 @@ See [ROADMAP.md](ROADMAP.md) for detailed progress tracking.
 ### Quick Summary
 
 ```
-Core Systems:     ████████████████████ 100%
-Progression:     ████████████████████ 100%
-Visuals:         ██████████░░░░░░░░░░░ 50%
-Audio:           ████░░░░░░░░░░░░░░░░░░ 20%
-Content:         ░░░░░░░░░░░░░░░░░░░░░  0%
-Mobile:          ░░░░░░░░░░░░░░░░░░░░░  0%
+Core Systems:    ████████████████████  100%
+Progression:     ████████████████████  100%
+Visuals:         ██████████░░░░░░░░░░  50%
+Audio:           ████░░░░░░░░░░░░░░░░  20%
+Content:         ░░░░░░░░░░░░░░░░░░░░  0%
+Mobile:          ░░░░░░░░░░░░░░░░░░░░  0%
 ```
 
 
