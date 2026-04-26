@@ -219,28 +219,34 @@ docs(readme): update documentation
 
 ## 11. Roadmap
 
-**Phase 1: Core Gameplay** (100%)
-- ✅ Player movement
-- ✅ Auto-attack
-- ✅ Enemy waves
-- ✅ Level-up system
+See [ROADMAP.md](ROADMAP.md) for detailed progress tracking.
 
-**Phase 2: Content** (60%)
-- ✅ Multiple enemy types
-- ✅ PowerUp upgrades
-- 🟡 More weapon types
-- ❌ Additional biomes
+| Phase | Status | Progress |
+|-------|--------|----------|
+| Core Gameplay | ✅ DONE | 100% |
+| Progression Systems | ✅ DONE | 100% |
+| Visual Polish | ⚠️ IN PROGRESS | 50% |
+| Audio | ⚠️ IN PROGRESS | 20% |
+| Content Expansion | 📋 BACKLOG | 0% |
+| Mobile Port | 📋 BACKLOG | 0% |
+| Polish & Release | 📋 BACKLOG | 10% |
 
-**Phase 3: Polish** (20%)
-- ✅ GLSL effects
-- 🟡 Sound effects
-- ❌ Mobile port
+### Quick Summary
+
+```
+Core Systems:     ████████████████████ 100%
+Progression:     ████████████████████ 100%
+Visuals:         ██████████░░░░░░░░░░░ 50%
+Audio:           ████░░░░░░░░░░░░░░░░░░ 20%
+Content:         ░░░░░░░░░░░░░░░░░░░░░  0%
+Mobile:          ░░░░░░░░░░░░░░░░░░░░░  0%
 
 ---
 
 ## 12. Resources
 
 - **Repository:** https://github.com/NicoRuedaA/Catpire_Survivors
+- **Roadmap:** [ROADMAP.md](ROADMAP.md) (detailed progress tracking)
 - **Documentation:** `Docs/`
 - **libGDX Docs:** https://libgdx.com/
 
